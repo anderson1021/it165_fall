@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anderson Benitez Ortiz | Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header>
+    <h1>Anderson Benitez Ortiz</h1>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact Me</h2>
+      <p>Use the form below to share a question or discuss an opportunity. Fields marked with an asterisk are required.</p>
+      <form action="#" method="POST">
+        <p>
+          <label for="full-name">Full name *</label>
+          <input type="text" id="full-name" name="full_name" minlength="3" required>
+        </p>
+        <p>
+          <label for="email">Email address *</label>
+          <input type="email" id="email" name="email" required>
+        </p>
+        <p>
+          <label for="zip-code">Five-digit ZIP code</label>
+          <input type="text" id="zip-code" name="zip_code" inputmode="numeric" pattern="[0-9]{5}" title="Enter a five-digit ZIP code" maxlength="5">
+        </p>
+        <p>
+          <label for="subject">Reason for contact *</label>
+          <select id="subject" name="subject" required>
+            <option value="">Choose a reason</option>
+            <option value="job">Job opportunity</option>
+            <option value="project">Project collaboration</option>
+            <option value="question">General question</option>
+          </select>
+        </p>
+        <p>
+          <label for="message">Message *</label>
+          <textarea id="message" name="message" rows="6" cols="40" minlength="10" required></textarea>
+        </p>
+        <button type="submit">Send message</button>
+      </form>
+      <p><small>This class demonstration uses action="#"; it checks entries in the browser but does not deliver messages.</small></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Anderson Benitez Ortiz. All rights reserved.</p>
+  </footer>
+</body>
+</html>
