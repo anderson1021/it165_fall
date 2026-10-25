@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Million Dollar WebApp</title>
+</head>
+<body>
+  <h1>JavaScript Title Exercise</h1>
+
+  <script>
+    var originalTitle = document.title;
+
+    function showUnreadCount(unread) {
+      document.title = originalTitle + " (" + unread + " new messages!)";
+    }
+
+    showUnreadCount(3);
+  </script>
+</body>
+</html>
