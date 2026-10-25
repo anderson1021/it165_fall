@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 6 | Motion & Landscapes</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="wrapper">
+    <p class="eyebrow">ANDERSON BENITEZ ORTIZ · WEEK 6</p>
+    <h1>A little motion.<br>A new perspective.</h1>
+    <p>Exploring CSS transitions, keyframe animations, and JavaScript.</p>
+  </header>
+  <main class="wrapper">
+    <section aria-labelledby="transition-heading">
+      <h2 id="transition-heading">01 / CSS transitions</h2>
+      <div class="cards">
+        <article class="card"><span class="number">0.3s</span><h3>Smooth movement</h3><p>Hover over this card to lift it upward, enlarge it slightly, and deepen its shadow.</p></article>
+        <article class="card"><span class="number">1.02×</span><h3>A closer look</h3><p>Each card uses translateY(-8px) and scale(1.02) for a gentle interactive effect.</p></article>
+      </div>
+    </section>
+    <section class="animation-section" aria-labelledby="animation-heading">
+      <div><h2 id="animation-heading">02 / Keyframe animation</h2><p>A rotating frame changes its border from teal to orange and back over a four-second timeline.</p></div>
+      <div class="animation-stage" aria-hidden="true"><div class="animated-frame"></div></div>
+    </section>
+    <section aria-labelledby="slideshow-heading">
+      <h2 id="slideshow-heading">03 / Five views, one slideshow</h2>
+      <figure class="slideshow">
+        <img id="slide-image" src="images/landscape1.svg" alt="Mountain peaks beneath a warm sun" width="1200" height="700">
+        <figcaption><span id="slide-caption">Mountain morning</span><span id="slide-counter" aria-live="polite" aria-atomic="true">1 / 5</span></figcaption>
+      </figure>
+      <div class="controls"><button id="previous-button" type="button">← Previous</button><p>Use the buttons to explore all five illustrations.</p><button id="next-button" type="button">Next →</button></div>
+    </section>
+  </main>
+  <footer class="wrapper">Week 6 · CSS & Vanilla JavaScript</footer>
+</body>
+</html>
